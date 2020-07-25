@@ -3,9 +3,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-input-button-unit',
   template: `
-    <input [value]="title"
+    <input class="todo-input"
+      [value]="title"
       (keyup.enter)="submitValue($event.target.value)">
-    <button (click)="submitValue('Button Clicked!')">
+    <button class="btn"
+      (click)="submitValue('Button Clicked!')">
       Save
     </button>
   `,
